@@ -3,7 +3,6 @@ body {
     background-image: url("./images/bg-top.svg"), url("./images/bg-bottom.svg");
     background-repeat: no-repeat;
     background-position: top right, bottom left;
-    display: initial;
     font-size: 15px;
     font-weight: 700;
 }
@@ -25,9 +24,7 @@ body {
     justify-content: center;
 }
 
-.child1,
-.child2,
-.child3 {
+.child {
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -39,58 +36,51 @@ body {
     align-self: center;
 }
 
-.child1:hover,
-.child2:hover,
-.child3:hover {
+.child:hover {
+    height: 350px;
+    color: hsl(240, 78%, 98%);
+}
+
+#child2 {
     background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
     height: 400px;
     color: hsl(240, 78%, 98%);
 }
-
-.child1:hover > p,
-.child2:hover > p,
-.child3:hover > p{ 
+#child2 > p{
     color: hsl(240, 78%, 98%);
 }
 
-.child1:hover > div >span,
-.child2:hover > div >span,
-.child3:hover > div >span,
-.child1:hover > div >p,
-.child2:hover > div >p,
-.child3:hover > div >p{ 
-    color: hsl(240, 78%, 98%);
-}
-
-.child1:hover > .button1,
-.child2:hover > .button2,
-.child3:hover > .button3 {
+#child2 > .button {
     background-color: hsl(240, 78%, 98%);
     color: hsl(237, 63%, 60%);
 }
 
-.child1:hover > .button1:hover,
-.child2:hover > .button2:hover,
-.child3:hover > .button3:hover {
+#child2 > div > span,
+#child2 > div > p{
+    color: hsl(240, 78%, 98%);
+}
+
+.child:hover > .button {
+    background-color: hsl(240, 78%, 98%);
+    color: hsl(237, 63%, 60%);
+}
+
+.child:hover > .button:hover {
     background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
     color: hsl(240, 78%, 98%);
 }
 
-.button1,
-.button2,
-.button3 {
+.button {
     margin-top: 7%;
     height: 40px;
     width: 250px;
     border-radius: 5px;
     border-color: hsl(237, 63%, 60%);
-    background-color: hsl(237, 63%, 60%);
-    color: hsl(240, 78%, 98%);
+    background-color: hsl(240, 78%, 98%);
+    color: hsl(237, 63%, 60%);
 }
 
-.button1:hover,
-.button2:hover,
-.button3:hover {
+.button:hover {
     height: 40px;
     width: 250px;
     border-radius: 5px;
@@ -178,7 +168,7 @@ p {
     font-family: "Montserrat";
     margin-top: 0.6em;
     margin-bottom: 0em;
-    display:inline;
+    display: inline;
     color: hsl(232, 13%, 33%);
 }
 
@@ -189,15 +179,18 @@ span {
     color: hsl(232, 13%, 33%);
 }
 
-#price1,
-#price2,
-#price3 {
+.price {
     font-family: "Montserrat";
     font-size: 40px;
 }
 
-.annually, .monthly{
+.annually,
+.monthly {
     font-size: 15px;
-    color:hsl(234, 14%, 74%)
+    color: hsl(234, 14%, 74%);
 }
 
+.space{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
