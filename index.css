@@ -42,7 +42,7 @@ body {
 .child1:hover,
 .child2:hover,
 .child3:hover {
-    background-color: hsl(237, 63%, 60%);
+    background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
     height: 400px;
     color: hsl(240, 78%, 98%);
 }
@@ -72,7 +72,7 @@ body {
 .child1:hover > .button1:hover,
 .child2:hover > .button2:hover,
 .child3:hover > .button3:hover {
-    background-color: hsl(237, 63%, 60%);
+    background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
     color: hsl(240, 78%, 98%);
 }
 
@@ -198,6 +198,6 @@ span {
 
 .annually, .monthly{
     font-size: 15px;
-    color: hsl(234, 14%, 74%)
+    color:hsl(234, 14%, 74%)
 }
 
